@@ -129,10 +129,14 @@
 
         /* الرأس */
         .header {
-            padding: 20px 0;
-            background-color: var(--white-color);
-            box-shadow: var(--box-shadow);
+    padding: 20px 0;
+    background: rgba(255, 255, 255, 0.7); /* خلفية بيضاء شفافة */
+    backdrop-filter: blur(10px); /* تأثير ضبابي حريري */
+    -webkit-backdrop-filter: blur(10px); /* لدعم متصفحات سفاري */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ظل ناعم */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); /* حد رقيق */
         }
+        
 
         .logo-container {
             display: flex;
@@ -141,12 +145,13 @@
         }
 
         .logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: transparent;
-    mix-blend-mode: multiply;
-    filter: brightness(1.1) drop-shadow(0 0 5px rgba(0,0,0,0.1));
+    width: 150px; /* تأكد من استخدام width بدلًا من th */
+    height: 120px; /* تأكد من استخدام height بدلًا من ght */
+    border-radius: 50%; /* دائري */
+    background-color: transparent; /* خلفية شفافة */
+    mix-blend-mode: multiply; /* لإزالة اللون الأبيض */
+    filter: brightness(1.1) drop-shadow(0 0 5px rgba(0, 0, 0, 0.2)); /* تحسين الإضاءة */
+    object-fit: contain; /* للحفاظ على نسبة الشعار */
         }
 
         .slogan {
